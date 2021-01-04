@@ -6,7 +6,7 @@ export default function Index({ hi, preview }) {
 
   return (
     <Layout>
-        <img src="https://i.imgur.com/Fa0nYet.png"></img>
+       <a href="https://discord.gg/J6jZBj2UHv"><img src="https://i.imgur.com/Fa0nYet.png"></img></a>
     </Layout>
   );
 }
