@@ -1,11 +1,53 @@
 body {
   background-color: #121212;
   color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 80vh; }
+  font-family: "Yusei Magic", sans-serif;
+  font-size: 1.25rem; }
+  body h1 {
+    font-size: 2.5rem;
+    font-family: "Permanent Marker", cursive; }
+  body a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 700;
+    transition: all 0.25s ease-in-out; }
+  body a:hover {
+    color: greenyellow; }
 
-img {
+#streamers {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  padding-top: 1em;
+  max-width: 900px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center; }
+  #streamers > div {
+    color: #000;
+    background-color: #eaeaea;
+    border-radius: 10px;
+    padding: 1em;
+    margin: 0.25em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    #streamers > div > a {
+      padding-top: 0.75em;
+      box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+      transition: all 0.25s ease-in-out; }
+    #streamers > div > a:hover {
+      box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5); }
+
+.flexCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0;
+  line-height: 2.25rem; }
+
+.logo {
   height: 20rem;
-  width: auto; }
+  width: auto;
+  padding-top: 2.5em; }
