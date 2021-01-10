@@ -9,7 +9,7 @@ export default function Index({ hi, preview }) {
       <section className="flexCenter">
         <a href="https://discord.gg/J6jZBj2UHv"><img className="logo" src="https://i.imgur.com/Fa0nYet.png"></img></a>
       </section>
-      <section className="flexCenter">
+      <section className="flexCenter intro">
         <h1>jokes, good game</h1>
         <p>we stream vr, hop in the <a href="https://discord.gg/J6jZBj2UHv">discord</a> to join our next session</p>
       </section>
