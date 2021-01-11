@@ -15,8 +15,8 @@ export default function Index({ hi, preview }) {
       </section>
       <section id="streamers">
         <div>
-          <p>CamsOnCams (dat boyy)</p>
-          <a href="http://twitch.tv/camsoncams"><img src="http://streambadge.com/twitch/light/camsoncams.png" alt="camsoncams's Streambadge" /></a>
+          <p>Dat Byte</p>
+          <a href="http://twitch.tv/datbyte"><img src="http://streambadge.com/twitch/light/datbyte.png" alt="datbyte's Streambadge"/></a>
         </div>
         <div>
           <p>JollyGrin</p>
