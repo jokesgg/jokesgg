@@ -11,6 +11,16 @@ export default class Background extends Component {
       <div className="background">
         <Particles params={{
           retina_detect: false,
+          interactivity: {
+            onresize: {
+              density_auto: true,
+              density_area: 250,
+              mode: 'out'
+            },
+            events: {
+              resize: true
+            }
+          },
           particles: {
             number: {
               value: 15,

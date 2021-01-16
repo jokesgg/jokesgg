@@ -4,9 +4,23 @@ import Background from '../components/Background';
 
 export default function Index({ hi, preview }) {
 
+  // https://gist.github.com/dmurawsky/d45f068097d181c733a53687edce1919
   return (
     <Layout>
+      <style global jsx>{`
+        html,
+        body,
+        body > div:first-child,
+        div#__next,
+        div#__next > div,
+        div#__next > div > div {
+          height: 100%;
+        }
+      `}
+      </style>
+
       <Background/>
+
       <div>
         <section className="flexCenter">
           <a href="https://discord.gg/J6jZBj2UHv"><img className="logo" src="/images/jokesgg.gif"></img></a>
@@ -18,12 +32,12 @@ export default function Index({ hi, preview }) {
         <section id="streamers">
           <div id="streamer">
             <a href="http://twitch.tv/datbyte">
-              <span>DatByte - <img src="/images/twitch.png" alt="DatByte's Channel"/></span>
+              <span>DatByte <img src="/images/twitch.png" alt="DatByte's Channel"/></span>
             </a>
           </div>
           <div id="streamer">
             <a href="http://twitch.tv/jollygrin">
-              <span>JollyGrin - <img src="/images/twitch.png" alt="JollyGrin's Channel"/></span>
+              <span>JollyGrin <img src="/images/twitch.png" alt="JollyGrin's Channel"/></span>
             </a>
           </div>
         </section>

@@ -61,6 +61,11 @@ body {
   margin: 0 auto;
   max-width: 900px; }
 
+/* For mobile phones - less padding */
+@media only screen and (max-width: 850px) {
+  .flexCenter {
+    padding: 0.75em 0; } }
+
 .logo {
   height: 15rem;
   width: auto;
@@ -96,8 +101,9 @@ body {
   65% { } }
 
 .background {
-  position: absolute;
   width: 100%;
   height: 100%;
   z-index: -1;
-  overflow: hidden; }
+  overflow: hidden;
+  position: absolute;
+  pointer-events: none; }
