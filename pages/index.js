@@ -1,29 +1,41 @@
 import React, { Component } from 'react';
 import Layout from '../components/Layout';
+import Background from '../components/Background';
 
 export default function Index({ hi, preview }) {
 
-
   return (
     <Layout>
-      <section className="flexCenter">
-        <a href="https://discord.gg/J6jZBj2UHv"><img className="logo" src="https://i.imgur.com/Fa0nYet.png"></img></a>
-      </section>
-      <section className="flexCenter intro">
-        <h1>jokes, good game</h1>
-        <p>we stream vr, hop in the <a href="https://discord.gg/J6jZBj2UHv">discord</a> to join our next session</p>
-      </section>
-      <section id="streamers">
-        <div>
-          <p>DatByte</p>
-          <a href="http://twitch.tv/datbyte"><img src="http://streambadge.com/twitch/light/datbyte.png" alt="datbyte's Streambadge"/></a>
-        </div>
-        <div>
-          <p>JollyGrin</p>
-          <a href="http://twitch.tv/jollygrin"><img src="http://streambadge.com/twitch/light/jollygrin.png" alt="jollygrin's Streambadge"/></a>
-        </div>
-
-      </section>
+      <Background/>
+      <div
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100vw",
+          height: "100vh"
+        }}
+      >
+        <section className="flexCenter">
+          <a href="https://discord.gg/J6jZBj2UHv"><img className="logo" src="https://i.imgur.com/Fa0nYet.png"></img></a>
+        </section>
+        <section className="flexCenter intro">
+          <h1>jokes, good game</h1>
+          <p>We stream VR, hop in the <img src="/images/discord.png"></img> <a id="discordLink" href="https://discord.gg/J6jZBj2UHv"><b>Discord</b></a> to join our next session</p>
+        </section>
+        <section id="streamers">
+          <div id="streamer">
+            <a href="http://twitch.tv/datbyte">
+              <span>DatByte - <img src="/images/twitch.png" alt="DatByte's Channel"/></span>
+            </a>
+          </div>
+          <div id="streamer">
+            <a href="http://twitch.tv/jollygrin">
+              <span>JollyGrin - <img src="/images/twitch.png" alt="JollyGrin's Channel"/></span>
+            </a>
+          </div>
+        </section>
+      </div>
     </Layout>
   );
 }
