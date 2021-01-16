@@ -7,15 +7,7 @@ export default function Index({ hi, preview }) {
   return (
     <Layout>
       <Background/>
-      <div
-        style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: "100vw",
-          height: "100vh"
-        }}
-      >
+      <div>
         <section className="flexCenter">
           <a href="https://discord.gg/J6jZBj2UHv"><img className="logo" src="/images/jokesgg.gif"></img></a>
         </section>
