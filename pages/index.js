@@ -40,6 +40,11 @@ export default function Index({ hi, preview }) {
               <span>JollyGrin <img src="/images/twitch.png" alt="JollyGrin's Channel"/></span>
             </a>
           </div>
+          <div id="streamer">
+            <a href="http://twitch.tv/gremmorey">
+              <span>Gremmorey <img src="/images/twitch.png" alt="Gremmorey's Channel"/></span>
+            </a>
+          </div>
         </section>
       </div>
     </Layout>
