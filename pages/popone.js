@@ -67,10 +67,10 @@ export default function PopOne({ hi, preview }) {
             
             <section id="p1-airtable">
                 <div>
-                    <iframe class="airtable-embed" src="https://airtable.com/embed/shrGf3ahdbGEwCeEI?backgroundColor=green&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533"></iframe>
+                    <iframe className="airtable-embed" src="https://airtable.com/embed/shrGf3ahdbGEwCeEI?backgroundColor=green&viewControls=on" frameBorder="0" width="100%" height="533"></iframe>
                 </div>
                 <div>
-                <iframe class="airtable-embed" src="https://airtable.com/embed/shr3ZEj3lkrNwiCdt?backgroundColor=green&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533"></iframe>
+                <iframe className="airtable-embed" src="https://airtable.com/embed/shr3ZEj3lkrNwiCdt?backgroundColor=green&viewControls=on" frameBorder="0" width="100%" height="533"></iframe>
                 </div>
             </section>
 
