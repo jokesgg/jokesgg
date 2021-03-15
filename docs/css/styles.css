@@ -225,5 +225,10 @@ section#p1-airtableHeader {
     padding-bottom: 0.25em; }
 
 section#p1-airtable {
-  display: grid;
-  grid-template-columns: 3fr 1fr; }
+  display: grid; }
+  @media (max-width: 900px) {
+    section#p1-airtable {
+      grid-template-columns: 3fr 1fr; } }
+  @media (min-width: 900px) {
+    section#p1-airtable {
+      grid-template-columns: 1fr; } }
