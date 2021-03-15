@@ -110,21 +110,25 @@ body {
   position: absolute;
   pointer-events: none; }
 
-/**/
+/*
+*/
 section#p1-hero {
   display: flex;
-  width: 600px;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
   padding-top: 3em; }
   section#p1-hero img {
-    height: 250px;
     margin: 1em; }
+    @media (min-width: 600px) {
+      section#p1-hero img {
+        height: 250px; } }
+    @media (max-width: 600px) {
+      section#p1-hero img {
+        height: 150px; } }
 
 section#p1-heroText {
   display: flex;
-  width: 600px;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
@@ -132,21 +136,28 @@ section#p1-heroText {
   padding-top: 3em; }
   section#p1-heroText h1 {
     font-family: "Montserrat", sans-serif;
-    font-size: 4em;
     font-weight: 900; }
+    @media (min-width: 600px) {
+      section#p1-heroText h1 {
+        font-size: 4em; } }
 
 section#p1-what-when {
-  display: flex;
-  width: 95vw;
-  margin: 0 auto;
-  padding-top: 3em;
+  display: grid;
+  grid-gap: 1em;
+  margin: 1em auto;
+  padding: 3em 1em 0;
   font-family: "Open Sans", sans-serif;
   color: #2d2d2d; }
+  @media (min-width: 900px) {
+    section#p1-what-when {
+      grid-template-columns: 1fr 1fr;
+      width: 900px; } }
+  @media (max-width: 900px) {
+    section#p1-what-when {
+      grid-template-columns: 1fr; } }
   section#p1-what-when > div {
     background-color: #fff;
     border-radius: 10px;
-    width: 45%;
-    margin: 0 2.5%;
     padding: 1em; }
   section#p1-what-when h3 {
     font-family: "Montserrat", sans-serif;
@@ -155,21 +166,37 @@ section#p1-what-when {
     padding-bottom: 0.25em; }
 
 section#p1-squad-req {
-  display: flex;
-  flex-direction: column;
-  width: 90vw !important;
-  margin: 3em auto;
+  grid-template-columns: 1fr;
+  display: grid;
+  grid-gap: 1em;
+  padding: 3em 1em 0;
   background-color: #a80000;
   border-radius: 10px; }
+  @media (min-width: 900px) {
+    section#p1-squad-req {
+      width: 900px;
+      margin: 1em auto; } }
+  @media (max-width: 900px) {
+    section#p1-squad-req {
+      margin: 1em 1em; } }
   section#p1-squad-req > .squad-req-header {
     display: flex;
     padding: 1em;
     justify-content: space-between; }
+    @media (max-width: 900px) {
+      section#p1-squad-req > .squad-req-header {
+        flex-direction: column; } }
+    @media (min-width: 900px) {
+      section#p1-squad-req > .squad-req-header {
+        flex-direction: row; } }
     section#p1-squad-req > .squad-req-header > h3 {
       font-family: "Montserrat", sans-serif;
       font-size: 2.5em;
       font-weight: 900;
       padding-bottom: 0.25em; }
+    @media (min-width: 900px) {
+      section#p1-squad-req > .squad-req-header > img {
+        height: 150px; } }
   section#p1-squad-req > .squad-req-text {
     padding: 1em; }
     section#p1-squad-req > .squad-req-text > .buttons {
@@ -181,6 +208,7 @@ section#p1-squad-req {
         color: #a80000;
         padding: 0.5em;
         border-radius: 5px;
+        margin: 0.25em;
         font-size: 1.25em;
         font-weight: 700;
         box-shadow: 5px 5px #520000;
@@ -191,7 +219,7 @@ section#p1-airtableHeader {
   grid-template-columns: 3fr 1fr; }
   section#p1-airtableHeader > h3 {
     font-family: "Montserrat", sans-serif;
-    font-size: 2.5em;
+    font-size: 1.15rem;
     font-weight: 900;
     margin: 0.25em;
     padding-bottom: 0.25em; }

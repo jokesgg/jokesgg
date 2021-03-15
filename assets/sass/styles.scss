@@ -158,11 +158,12 @@ body {
   pointer-events: none;
 }
 
-/**/
+/*
+*/
 
 section#p1-hero {
+
   display: flex;
-  width: 600px;
   margin: 0 auto;
 
   justify-content: center;
@@ -171,14 +172,20 @@ section#p1-hero {
   padding-top: 3em;
 
   & img {
-    height: 250px;
     margin: 1em;
+
+    @media (min-width: 600px) {
+      height: 250px;
+    }
+    @media (max-width: 600px) {
+      height: 150px;
+    }
   }
 }
 
 section#p1-heroText {
+    
   display: flex;
-  width: 600px;
   margin: 0 auto;
 
   justify-content: center;
@@ -189,27 +196,35 @@ section#p1-heroText {
 
   & h1 {
     font-family: $font-p1-mont;
-    font-size: 4em;
     font-weight: 900;
+
+    @media (min-width: 600px) {
+      font-size: 4em;
+    }
+    
   }
 }
 
 section#p1-what-when {
-  display: flex;
-  width: 95vw;
-  margin: 0 auto;
+  @media (min-width: 900px) {
+    grid-template-columns: 1fr 1fr;
+    width: 900px;
+  }
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+  }
 
-  padding-top: 3em;
+  display: grid;
+  grid-gap: 1em;
+  margin: 1em auto;
+  padding: 3em 1em 0;
+
   font-family: $font-p1-open;
-
   color: #2d2d2d;
 
   & > div {
     background-color: #fff;
     border-radius: 10px;
-
-    width: 45%;
-    margin: 0 2.5%;
     padding: 1em;
   }
 
@@ -221,16 +236,32 @@ section#p1-what-when {
   }
 }
 
-section#p1-squad-req {
-  display: flex;
-  flex-direction: column;
-  width: 90vw !important;
-  margin: 3em auto;
+section#p1-squad-req {  
+  @media (min-width: 900px) {
+    width: 900px;
+    margin: 1em auto;
+  }
+  @media (max-width: 900px) {
+    margin: 1em 1em;
+  }
+
+  
+  grid-template-columns: 1fr;
+  display: grid;
+  grid-gap: 1em;
+  padding: 3em 1em 0;
 
   background-color: #a80000;
   border-radius: 10px;
 
   & > .squad-req-header {
+    @media (max-width: 900px) {
+      flex-direction: column;
+    }
+    @media (min-width: 900px) {
+      flex-direction: row;
+    }
+    
     display: flex;
     padding: 1em;
 
@@ -242,6 +273,11 @@ section#p1-squad-req {
       font-weight: 900;
       padding-bottom: 0.25em;
     }
+    & > img {
+      @media (min-width: 900px) {
+        height: 150px;
+      }
+    }
   }
 
   & > .squad-req-text {
@@ -250,6 +286,7 @@ section#p1-squad-req {
     & > .buttons {
       display: flex;
       justify-content: space-around;
+      
 
       padding-top: 1em;
        
@@ -258,6 +295,8 @@ section#p1-squad-req {
         color: #a80000;
         padding: 0.5em;
         border-radius: 5px;
+
+        margin: 0.25em;
 
         font-size: 1.25em;
         font-weight: 700;
@@ -275,7 +314,7 @@ section#p1-airtableHeader {
 
   & > h3 {
     font-family: $font-p1-mont;
-    font-size: 2.5em;
+    font-size: 1.15rem;
     font-weight: 900;
     margin: 0.25em;
     padding-bottom: 0.25em;

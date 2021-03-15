@@ -39,7 +39,7 @@ export default function PopOne({ hi, preview }) {
             <section id="p1-squad-req">
                 <div className="squad-req-header">
                     <h3>
-                        squad requirements
+                        squad reqs
                     </h3>
                     <img src="images/squadreq.svg" />
                 </div>
