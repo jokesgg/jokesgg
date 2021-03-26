@@ -55,6 +55,9 @@ export default function PopOne({ hi, preview }) {
                         <div className="make-button">
                             <a href="https://airtable.com/shrBlZSMQpZWd7vUr">MAKE A SQUAD</a>
                         </div>
+                        <div className="submit-button">
+                            <a href="https://airtable.com/shrBlZSMQpZWd7vUr">SUBMIT GAME</a>
+                        </div>
                     </div>
 
                 </div>
