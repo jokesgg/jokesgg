@@ -27,7 +27,7 @@ export default function Index({ hi, preview }) {
         </section>
         <section className="flexCenter intro">
           <h1>jokes, good game</h1>
-          <p>We stream VR, hop in the <img src="/images/discord.png"></img> <a id="discordLink" href="https://discord.gg/J6jZBj2UHv"><b>Discord</b></a> to join our next session</p>
+          <p>We stream VR, hop in the <img src="/images/discord.png"></img> <a id="discordLink" href="https://discord.gg/J6jZBj2UHv"><b>Discord</b></a> to join our next session. <br /> We're hosting a POP:ONE tornament today (Mar 27), <a href="/popone">click here to join or view the teams.</a></p>
         </section>
         <section id="streamers">
           <div id="streamer">
