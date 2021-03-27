@@ -31,7 +31,7 @@ export default function PopOne({ hi, preview }) {
                     <h3>when?</h3>
                     <p>
                         This event takes place at <br />
-                        8pm CEST, March 27th
+                        8pm-11pm CEST, March 27th
               </p>
                 </div>
             </section>
