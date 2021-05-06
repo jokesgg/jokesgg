@@ -30,19 +30,24 @@ export default function Index({ hi, preview }) {
           <p>We stream VR, hop in the <img src="/images/discord.png"></img> <a id="discordLink" href="https://discord.gg/J6jZBj2UHv"><b>Discord</b></a> to join our next session.</p>
         </section>
         <section id="streamers">
-          <div id="streamer">
+          <div class="streamer">
             <a href="http://twitch.tv/datbyte">
               <span>DatByte <img src="/images/twitch.png" alt="DatByte's Channel"/></span>
             </a>
           </div>
-          <div id="streamer">
+          <div class="streamer">
             <a href="http://twitch.tv/jollygrin">
               <span>JollyGrin <img src="/images/twitch.png" alt="JollyGrin's Channel"/></span>
             </a>
           </div>
-          <div id="streamer">
+          <div class="streamer">
             <a href="http://twitch.tv/gremmorey">
               <span>Gremmorey <img src="/images/twitch.png" alt="Gremmorey's Channel"/></span>
+            </a>
+          </div>
+          <div class="streamer">
+            <a href="https://www.twitch.tv/kingnombo">
+              <span>KingNombo <img src="/images/twitch.png" alt="KingNombo's Channel"/></span>
             </a>
           </div>
         </section>
